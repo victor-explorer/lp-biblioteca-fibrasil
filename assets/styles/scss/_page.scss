@@ -1,0 +1,136 @@
+@use 'variables';
+@use 'typography';
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  @include font();
+
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+
+  transition: all 100ms ease;
+
+  color: $gray-400;
+  line-height: 30px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @include font-title();
+  color: $primary;
+
+  @media(min-width: 992px) {
+    font-size: $h-lg;
+  }
+}
+
+/*Banner*/
+.fibrasil-banner {
+  background-image: url(../../images/bg-bannerMobile.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 60vh;
+
+  position: relative;
+
+  .fibrasil-img-absolute {
+    position: absolute;
+    max-width: 100%;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    max-width: 100%;
+    transform: translate(0, -25%);
+  }
+
+  .fibrasil-feature-subtitle {
+    color: $secondary;
+    font-size: $lg;
+    font-weight: 800;
+  }
+
+  .fibrasil-banner-content {
+    p {
+      color: $primary;
+      font-size: $sm;
+      line-height: 176%;
+    }
+  }
+
+  @media(min-width: 1200px) {
+    background-image: url(../../images/bg-bannerDesktop.webp);
+    max-height: 600px;
+
+    .fibrasil-feature-subtitle {
+      font-size: $xxl;
+    }
+
+    .fibrasil-banner-content {
+      p {
+        font-size: $md;
+        line-height: 166%;
+      }
+    }
+
+  }
+
+  @media(min-width: 1200px) and (max-width: 1629px) {
+    height: 65vh;
+
+    .fibrasil-img-absolute {
+      max-width: 70vw;
+      transform: translate(-15%, -35%);
+    }
+  }
+
+  @media(min-width: 1630px) {
+
+    .fibrasil-img-absolute {
+      max-width: none;
+      transform: translate(-20%, -35%);
+    }
+  }
+
+
+
+
+
+
+
+
+}
+
+/*Section Wrapper*/
+.fibrasil-wrapper {
+  padding: 3.125rem 0;
+
+  &--margin {
+    @extend .fibrasil-wrapper;
+    margin-top: 12rem;
+  }
+
+  @media (min-width: 992px) {
+    padding: 3.75rem 0;
+
+    &--margin {
+      // @extend .fibrasil-wrapper;
+      margin-top: 8rem;
+    }
+  }
+}
+
+/*Paragraph*/
+.fibrasil-subheading {
+  font-size: $lg;
+  color: $gray-500;
+  font-weight: 800;
+}
