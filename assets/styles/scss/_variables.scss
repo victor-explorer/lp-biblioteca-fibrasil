@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;800;&display=swap');
-
 //Colors
 $primary: #0055A5;
 $secondary: #FFB500;
@@ -18,7 +16,7 @@ $xxl: 1.875rem;
 $h-sm: 2.1875rem;
 $h-lg: 3.125rem;
 
-@mixin font($weight: 400, $size: $md) {
+@mixin font($weight: 400, $size: 15px) {
   font: normal $weight $size 'Roboto', sans-serif;
 }
 
