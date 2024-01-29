@@ -223,7 +223,7 @@
                     <img src="<?php echo get_template_directory_uri() . '/lp-biblioteca/assets/images/img-truck.webp'; ?>"
                         alt="" class="img-fluid">
                 </div>
-                <div class="col-lg-4 order-0 order-lg-1 px-5 px-lg-0">
+                <div class="col-lg-3 order-0 order-lg-1 px-5 px-lg-0">
                     <h5>
                         <?php the_field('biblioteca_sobre_titulo'); ?>
                     </h5>

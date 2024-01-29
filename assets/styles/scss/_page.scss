@@ -34,11 +34,22 @@ h6 {
 }
 
 #lp-biblioteca {
+  @media (max-width: 576px) {
+    .container {
+      padding-left: 35px !important;
+      padding-right: 35px !important;
+    }
+  }
+
   @media (min-width: 1200px) {
     .container {
       max-width: 1140px !important;
     }
   }
+}
+
+.header-mobi .bar {
+  line-height: normal !important;
 }
 
 /*Banner*/
@@ -74,6 +85,13 @@ h6 {
       color: $primary;
       font-size: $sm;
       line-height: 176%;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .fibrasil-img-absolute {
+      transform: translate(0, -15%);
+      max-width: 110%;
     }
   }
 
@@ -137,6 +155,13 @@ h6 {
     &--margin {
       // @extend .fibrasil-wrapper;
       margin-top: 8rem;
+    }
+  }
+
+  @media (min-width: 1700px) {
+    &--margin {
+      // @extend .fibrasil-wrapper;
+      margin-top: 20vh;
     }
   }
 }

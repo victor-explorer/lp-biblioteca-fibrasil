@@ -106,7 +106,7 @@ if (!class_exists('\\BootstrapBasic4\\BootstrapBasic4')) {
 
             if (is_page_template('page-biblioteca.php')) {
                 wp_enqueue_style('lp-biblioteca-style', get_template_directory_uri() . '/lp-biblioteca/assets/styles/css/styles.css', array(), '1.0');
-                wp_enqueue_script('lp-jquery', 'https://code.jquery.com/jquery-3.3.1.slim.min.js', array(), '3.3.1', true);
+                wp_enqueue_script('lp-jquery', 'https://code.jquery.com/jquery-3.6.0.min.js', array(), '3.6.0', true);
                 wp_enqueue_script('lp-biblioteca-script', get_template_directory_uri() . '/lp-biblioteca/assets/scripts/scripts.js', array('lp-jquery'), '1.0', true);
             }
 
